@@ -113,7 +113,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #1565C0;
+    color: #00B0BB;
 }
 
 a a:focus {
@@ -2682,4 +2682,18 @@ ul.recent-post li .post-text span {
 }
 .footer-logo{
     margin-top: -15px;
+}
+/* ////// modren section//// */
+.modren{
+    color: #00B0BB;
+    
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+.modren-vectors img{
+    height: 100px;
+    width: 100px;
 }
