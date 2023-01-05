@@ -1898,31 +1898,21 @@ figure:hover figcaption {
 }
 
 .page-footer {
-    background: #333;
+    background: #f3f3fa;
 }
 
 .page-footer .footer-title {
-    position: relative;
-    color: #fff;
-    text-transform: uppercase;
+    /* position: relative;
+    text-transform: uppercase; */
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 0.1rem;
-    margin-bottom: 40px;
+    /* letter-spacing: 0.1rem; */
 }
-
-.page-footer .footer-title:before {
-    position: absolute;
-    content: '';
-    background: #2196F3;
-    width: 40px;
-    height: 2px;
-    left: 0px;
-    bottom: -15px;
-}
+.footer-contact-widget img{
+    opacity: 0.3;
+} 
 
 .page-footer p {
-    color: #fff;
     line-height: 24px;
     margin: 0;
 }
@@ -1978,10 +1968,6 @@ figure:hover figcaption {
 
 .page-footer .widget-gallery ul li a img {
     width: 100%;
-}
-
-.footer-widget-container {
-    border-top: 4px solid #2196F3;
 }
 
 .footer-contact-widget p {
