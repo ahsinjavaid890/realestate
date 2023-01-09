@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Real Estate | About Us</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/css/material.min.css">
+  <link rel="stylesheet" href="assets/css/ripples.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/settings.css">
+  <link rel="stylesheet" href="assets/css/slicknav.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/color-switcher.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/colors/blue.css" media="screen" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+        font-family:  Merriweather !important;
+    }
+    body p{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .navbar-header a{
+        color: #fff !important;
+    }
+    .navbar-position{
+        position: absolute;
+        top: 0px;
+    }
+    .bg-image{
+        background-image: url('assets/images/aboutus/Rectangle 163.png');
+        background-size: cover;
+        height: 400px;
+    }
+    .bgimage-wrapper{
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .bg-image h2{
+        padding-top: 11rem;
+    }
+    .mortgage-wrapper{
+        margin-top: -50px;
+    }
+    .mortgage-founder1{
+        background-color: #3A3D3E;
+        border-radius: 25px;
+    }
+    .mortgage-founder2{
+        background-color: #00B0BB;
+        border-radius: 25px;
+    }
+    .founder1{
+        position: absolute;
+        right: -32px;
+        bottom: -20px;
+        width: 80px;
+    }
+    .founder2{
+        position: absolute;
+        top: -20px;
+        left: -45px;
+        width: 80px;
+    }
+    .mortgage-section p{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        word-spacing: 0px;
+    }
+    .mortgage-right{
+        word-spacing: 4px;
+    }
+    .mortgage-section{
+        position: relative;
+    }
+    .dots-left{
+        width: 300px;
+        height: 200px;
+    }
+    .comma-left{
+        position: absolute;
+        top: -95px;
+        left: -55px;
+    }
+    .dots-right{
+        width: 225px;
+        height: 125px;
+    }
+    .comma-right{
+        position: absolute;
+        right: -100px;
+        bottom: -7px;
+    }
+
+    .team{
+        background-color: #f3f3fa;
+    }
+    .team-left-content{
+        background-color: #3A3D3E;
+    }
+    .team-left-content h1{
+        font-size: 2.3rem !important;
+    }
+    .team-right-content h1{
+        font-size: 2.3rem !important;
+    }
+    .team-right-content{
+        background: #00B0BB;
+    }
+    .blue{
+        color: #091638 !important;
+    }
+    .green{
+        color: #00B0BB;
+    }
+    .contact img{
+        max-width: 100%;
+        height: 493px;
+    }
+    .contactus{
+        background: #F3F3FA;
+    }
+    .contactus button{
+        border: 2px solid #00B0BB;
+        color: #00B0BB;
+        background: #F3F3FA;
+        padding: 10px 50px;
+        font-size: 18px;
+    }
+
+    
+    /*    Media Queries     */
+
+    @media screen and (max-width: 992px){
+        .bgimage-wrapper h2{
+            width: 100% !important;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+    @media screen and (max-width: 465px){
+        .bg-image h2{
+            padding-top: 9rem;
+        }
+    }
+    @media screen and (max-width: 327px){
+        .bg-image h2{
+            padding-top: 7rem;
+        }
+    }
+
+    @media screen and (max-width: 1200px){
+        .modren-vector {
+            left: -5px;
+            top: -15px;
+        }
+    }
+    @media screen and (max-width: 993px){
+        .modren-vectors img {
+            width: 425px;
+            height: 450px;
+        }
+        .modren-vector {
+            left: 15px;
+            top: 110px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .modren-vectors{
+            display: none !important;
+        }
+        .modren-relative h1{
+            word-spacing: 0px;
+            font-size: 2rem;
+        }
+        }
+        .modren-section {
+            padding-top: 2rem !important;
+            padding-bottom: 1.3rem !important;
+        }
+        .modren-wrapper{
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+    }
+
+    @media screen and (max-width: 1250px){
+        .comma-left {
+            left: -30px;
+        }
+    }
+    @media screen and (max-width: 1030px){
+        .founder1 {
+            right: -20px;
+            bottom: -25px;
+            width: 60px;
+        }
+        .founder2 {
+            top: -30px;
+            left: -25px;
+            width: 60px;
+        }
+    }
+    @media screen and (max-width: 992px){
+        .dots-left {
+            width: 225px;
+            height: 125px;
+        }
+        .comma-left {
+            top: -50px;
+            left: -105px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .mortgage-section p {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .mortgage-right {
+            word-spacing: 0px;
+            padding: 2rem;
+        }
+        .mortgage-right h1 {
+            font-size: 2rem;
+        }
+        .comma-right {
+            display: none;
+        }
+        .comma-left {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 576px){
+        .founder2 {
+            top: -13px;
+            left: -8px;
+            width: 45px;
+        }
+        .founder1 {
+            right: -13px;
+            bottom: -15px;
+            width: 45px;
+        }
+    }
+
+    @media screen and (max-width: 991px){
+        .team-image img{
+            width: 120px;
+            height: 72px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .team-left-content h1 {
+            font-size: 2rem !important;
+        }
+        .team-left-image{
+            padding-top: 0px !important;
+        }
+        .team-left-image img{
+            margin-top: 0.5rem !important;
+        }
+        .team-right-content {
+            padding-bottom: 1.5rem !important;
+            padding-top: 1.5rem !important;
+        }
+        .team-right-content h1 {
+            font-size: 2rem !important;
+        }
+        .team-right-image{
+            padding-bottom: 0px !important;
+        }
+        .team-right-image img{
+            margin-bottom: 0.5rem !important;
+        }
+        .team-image img {
+            width: 165px;
+            height: 117px;
+        }
+    }
+    @media screen and (max-width: 532px){
+        .team-image img{
+            height: 95px;
+            width: 145px;
+        }
+    }
+    @media screen and (max-width: 472px){
+        .team-image img{
+            height: 105px;
+            width: 125px;
+            padding-right: 1rem !important;
+        }
+    }
+    @media screen and (max-width: 412px){
+        .team-image img{
+            width: 105px;
+            height: 85px;
+        }
+    }
+    @media screen and (max-width: 352px){
+        .team-image img{
+            width: 80px;
+            height: 65px;
+        }
+    }invester
+
+    @media screen and (max-width: 768px){
+        .invester h1{
+            font-size: 2.3rem;
+        }
+        .invester-wrapper{
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+        }
+        .invester-row{
+            padding-top: 1rem !important;
+        }
+    }
+    @media screen and (max-width: 576px){
+        .invester-row img{
+            padding-bottom: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 1200px){
+        .contact img{
+            height: 568px;
+        }
+    }
+    @media screen and (max-width: 992px){
+        .contact img{
+            width: 720px;
+        }
+    }
+
+    /*@media screen and (max-width: 1200px){
+        .contactus{
+            padding: 1rem 2rem;
+        }
+        .contactus .button{
+            margin-top: 0rem !important;
+            padding-top: 0.5rem !important;
+        }
+        .contactus h4{
+            padding: 0rem 0.5rem !important;
+        }
+    }*/
+    /*@media screen and (max-width: 992px){
+        .modren-vector {
+            left: 40px;
+            top: -15px;
+        }
+        .comma-left {
+            top: -95px;
+            left: 0px;
+        }
+        .founder1 {
+            right: -20px;
+            bottom: -15px;
+            width: 55px;
+        }
+        .founder2 {
+            top: -20px;
+            left: -25px;
+            width: 55px;
+        }
+    }*/
+
+
+
+
+    @media screen and (min-width: 768px) and (max-width: 991px){
+        
+    }
+
+    @media screen and (min-width: 550px) and (max-width: 767px){
+        .bgimage-wrapper h2{
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        
+        .modren-section h1 {
+            word-spacing: 0px;
+        }
+        .modren-section .container{
+            margin: 0px auto;
+        }
+    }
+
+    @media screen and (max-width: 549px){
+        
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header">
+    <nav class="container navbar navbar-expand-lg scrolling-navbar nav-bg">
+      <div class="container navbar-position">
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="mdi mdi-menu"></span>
+            <span class="mdi mdi-menu"></span>
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="" class="w-100"></a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Properties
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Financing
+                     </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="about-us.html">About Us</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us
+                     </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Careers
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Partners
+                    </a>
+                </li>
+            </ul>
+            <a class="btn login mr-2 " href="#">Login</a>
+            <a class="btn login" href="#">Get Started</a>
+        </div>
+      </div>
+
+        <ul class="wpb-mobile-menu">
+            <li>
+                <a class="" href="#">
+                 Properties
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                Financing
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="about-us.html">About Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                 Careers
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  Partners
+                 </a>
+            </li>
+        </ul>
+    </nav>
+
+   <div class="bg-image text-white">
+        <div class="bgimage-wrapper">
+            <h2 class="font-weight-bold text-center mx-auto w-50">We believe buying a home should be something to celebrate</h2>
+        </div>
+    </div>
+  </header>
+
+
+    <div class="modren-section pt-5 pb-5">
+        <div class="container modren-wrapper mt-4 mb-2">
+            <div class="row justify-content-between">
+                <div class="col-md-5 modren-relative">
+                    <h1 class="font-weight-bold">
+                        How we quickly became the <span class="modren">biggest player</span> in the market
+                    </h1>
+                    <div class="modren-vectors pt-2">
+                     <a href="#" class="modren-vector"><img src="assets/images/aboutus/Group 6904.png" ></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <p>
+                    Getting your own home is a high point in our lives, we want to build an experience that matches that feeling – without the hassle. That's why our mission is to simplify the home buying process and make it an actual enjoyable moment for everyone
+                    </p>
+                    <p>
+                    Getting your own home is a high point in our lives, we want to build an experience that matches that feeling – without the hassle.
+                    </p>
+                    <p>
+                    Getting your own home is a high point in our lives, we want to build an experience that matches that feeling – without the hassle. That's why our mission is to simplify the home buying process and make it an actual enjoyable moment for everyone
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mortgage-section">
+        <img src="assets/images/aboutus/dotsl.png" class="dots-left">
+        
+        <div class="container">
+            <div class="row justify-content-between mortgage-wrapper">
+                <div class="col-md-6 text-white mortgage-left">
+                    <div class="mortgage-founder1 p-4 mb-5" style="position: relative;">
+                        <p >
+                        We started Huspy with the aim to disrupt one of the largest industries and bring the entire home buying process online. Customers are massively underserved where lack of visibility, poor customer experience, and overpayment are common problems. We want to solve that.
+                        </p>
+                        <div>
+                            <p class="mb-0" style="font-weight: 600;">Jad Antoun</p>
+                            <p class="mb-0" style="font-size: 16px;">CTO & CO-Founder</p>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/aboutus/Ellipse 115.png" class="founder1">
+                            <img src="assets/images/aboutus/” (1).png" class="comma-left">
+                        </div>
+                    </div>
+                    
+
+                    <div class="mortgage-founder2 px-4 pt-5 pb-3" style="position:relative;">
+                        <p class="pb-0">
+                        Our teams have built tools and systems to leverage technology to give us the ability to provide customers with a great digital experience. Whether they are looking for a property, getting a mortgage for it, or both.
+                        </p>
+                        <div class="clearfix">
+                            <span class="float-right">
+                                <p class="mb-0" style="font-weight: 600;">Jad Antoun</p>
+                                <p class="mb-0" style="font-size: 16px;">CTO & CO-Founder</p>
+                            </span>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/aboutus/Ellipse 116.png" class="founder2">
+                            <img src="assets/images/aboutus/”.png" class="comma-right">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-5 mortgage-right m-auto">
+                    <h1 class="font-weight-bold">
+                    <span class="modren">We</span> became UAE’s #1 mortgage provider in only one year of operations, with an annual run-rate of more than <span class="modren">1 billion USD.</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <img src="assets/images/aboutus/dotsr.png" class="float-right dots-right">
+        </div>
+    </section>
+
+
+    <section class="team">
+        <div class="team-wrapper container">
+            <h1 class="font-weight-bold text-center py-5 mb-0">Our Team</h1>
+            <div class="row align-items-baseline text-white pb-5">
+                <div class="col-md-6">
+                    <div class="team-left">
+                        <div class="team-left-content rounded p-4">
+                            <h1 class="font-weight-bold text-center mb-0 py-3">Engineering, product, design & user experience</h1>
+                            <p class="pb-4 pt-4">
+                            Careem. Uber. Microsoft. Compass. Loft. Quinto Andar. SumUp. Loggi. Gympass and more.A handful of the best talent from some of the world’s top tech companies who joined Huspy because they believe in our mission: to revolutionize the home buying market and making the experience a breeze.
+                            </p>
+                        </div>
+
+                        <div class="team-left-image team-image d-md-flex py-5">
+                            <img src="assets/images/aboutus/Ellipse 109.png" class="pr-5 mt-4 img-fluid">
+                            <img src="assets/images/aboutus/Ellipse 110.png" class="pr-5 mt-4 img-fluid">
+                            <img src="assets/images/aboutus/Ellipse 111.png" class="pr-5 mt-4 img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="team-right">
+                        <div class="team-right-image team-image d-md-flex pb-5">
+                            <img src="assets/images/aboutus/Ellipse 115.png" class="pr-5">
+                            <img src="assets/images/aboutus/Ellipse 113.png" class="pr-5">
+                            <img src="assets/images/aboutus/Ellipse 114.png" class="pr-5">
+                        </div>
+
+                        <div class="team-right-content rounded px-4 py-5">
+                            <h1 class="font-weight-bold text-center mb-0 py-3">Real estate experts & home financing advisors</h1>
+                            <p class="pb-4 pt-4">
+                            Our team of brokers have over 20 years of experience working for banks like Emirates NBD, RAKBANK, ADIB, DIB and also top-notch real estate agencies.They’re a smart and friendly group of people who will always go the extra mile to make each customer’s life easier.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="invester">
+        <div class="container">
+            <div class="text-center invester-wrapper my-5 py-5">
+                <h1 class="font-weight-bold"><span class="blue">We’re backed by</span> <span class="green">amazing investors</span></h1>
+
+                <div class="row justify-content-around align-items-center invester-row pt-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <img src="assets/images/aboutus/image 15.png">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <img src="assets/images/aboutus/image 13.png">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <img src="assets/images/aboutus/image 12.png">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <img src="assets/images/aboutus/image 13.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 px-0">
+                    <img src="assets/images/aboutus/Rectangle 166.png" class="img">
+                </div>
+
+                <div class="col-lg-6 col-md-12 px-0">
+                    <div class="contactus p-5">
+                        <h1 class="font-weight-bold"><span class="green">Come</span> <span class="blue">and say</span> <span class="green">hello</span></h1>
+                        <h4 class="font-weight-bold px-2 py-4">In the area? Our doors are always open. Feel free to stop by for a quick chat.</h4>
+                        <h4 class="font-weight-bold px-2">We are at</h4>
+                        <h4 class="px-2">Business Bay, Dubai7th floor, The Bay</h4>
+                        <h4 class="px-2">Gate,United Arab Emirates</h4>
+                        <div class="px-2 pt-4 mt-4 button">
+                            <button>Get in Touch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer center-on-small-only  pt-0 footer-widget-container">
+        <div class="footer-copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="">
+                        <img src="assets/images/footer logo.png" alt="">
+                        </div>
+                        <div class="footer-logo">
+                        <img src="assets/images/Real Estate.png" alt=""> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#" class="back-to-top">
+        <div class="ripple-container"></div>
+        <i class="mdi mdi-arrow-up"></i>
+    </a>
+
+    <div id="preloader">
+        <div class="loader" id="loader-1"></div>
+    </div>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/color-switcher.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="assets/js/jquery.inview.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/scroll-top.js"></script>
+    <script src="assets/js/material.min.js"></script>
+    <script src="assets/js/ripples.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.vide.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
