@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Real Estate</title>
-
+    <title>Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
@@ -46,27 +46,28 @@
                      <span class="mdi mdi-menu"></span>
                      <span class="mdi mdi-menu"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="" class="w-100"></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/index-images/logo.png" alt="" class="w-100"></a>
                 </div>
-                <div class="collapse navbar-collapse" id="main-navbar">
+                <div class="collapse navbar-collapse pt-2" id="main-navbar">
                     <ul class="navbar-nav mr-auto w-100 justify-content-center">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                Properties
                             </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             Financing
+                             Financing <i class="fa-solid fa-caret-down ml-1"></i>
                              </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="about-us.html">About Us</a>
-                            </div>
+                           
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="dropdown-menu" aria-haspopup="true" aria-expanded="false">
                               About Us
                              </a>
+                             <div class="dropdown-menu" aria-labelledby="dropdown-menu" >
+                                <a class="dropdown-item" href="blogs.html">Blogs</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -79,14 +80,14 @@
                             </a>
                         </li>
                     </ul>
-                    <a class="btn login mr-2 " href="#">Login</a>
-                    <a class="btn login" href="#">Get Started</a>
+                    <a class="btn login mr-2 " href="login.html">Login</a>
+                    <a class="btn login" href="get-started.html">Get Started</a>
                 </div>
             </div>
 
             <ul class="wpb-mobile-menu">
                 <li>
-                    <a class="" href="#">
+                    <a class="" href="index.html">
                      Properties
                     </a>
                 </li>
@@ -94,16 +95,16 @@
                     <a href="#">
                     Financing
                     </a>
-                    <ul class="dropdown">
-                        <li>
-                            <a href="about-us.html">About Us</a>
-                        </li>
-                    </ul>
                 </li>
                 <li>
                     <a href="#">
                         About Us
                     </a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="blogs.html">blogs</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">
@@ -115,63 +116,156 @@
                       Partners
                      </a>
                 </li>
+                <li>
+                    <a class="" href="login.html">Login</a>
+                </li>
+                <li>
+                    <a class="" href="get-started.html">Get Started</a>
+                </li>
             </ul>
         </nav>
     </header>
 
 
-     <div class="modren-section pt-5 mt-5">
+     <div class="modren-section section-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1 class="font-weight-bold">
-                        <span class="modren">Modren</span> & <span class="modren">Affordable</span> living for everyone
+            <div class="row pb-5">
+                <div class="col-md-6 pt-4">
+                    <h1 class="hero-heading">
+                        <span class="modren">Modern</span> & <span class="modren">Affordable</span> living for everyone
                     </h1>
-                    <p class="mt-2"> We provide a complete service for the house financing, sale, purchase or rental of real estate. We have been operating in Madrid and Barcelona more than 15 years.</p>
-                   <div class="modren-vectors pt-2">
-                     <a href="#" class="modren-vector"><img src="assets/images/modren-vector.png" ></a>
-                     <a href="#" class="modren-vector ml-2"><img src="assets/images/modren-vector.png" ></a>
-                     <a href="#" class="modren-vector ml-2"><img src="assets/images/modren-vector.png"></a>
+                    <p class="mt-4"> We provide a complete service for the house financing, sale, purchase or rental of real estate. We have been operating in Madrid and Barcelona more than 15 years.</p>
+                   <div class="modren-vectors d-flex pt-2">
+                    <div>
+                        <a href="#" class="modren-vector"><img src="assets/images/index-images/modren-vector.png" ></a>
+                        <div class="modren-vector-content text-center ">
+                           <span class="modren">Home Financing</span>
+                        </div>
+                    </div>
+                    <div class="ml-2">
+                        <a href="#" class="modren-vector"><img src="assets/images/index-images/modren-vector.png" ></a>
+                        <div class="modren-vector-content  text-center  ">
+                           <span class="modren">Property Management</span>
+                        </div>
+                    </div>
+                    <div class="ml-2">
+                        <a href="#" class="modren-vector"><img src="assets/images/index-images/modren-vector.png" ></a>
+                        <div class="modren-vector-content  text-center">
+                           <span class="modren">Just Exploring</span>
+                        </div>
+                    </div>
                    </div>
+                </div>
+                <div class="col-md-6 header-image">
+                    <img src="assets/images/index-images/header picture.jpg" class="w-100 ">
                 </div>
             </div>
         </div>
      </div>
+     
+    <section class="matrl-about-section section-padding ">
+        <div class="container py-3">
+           <div class="pb-3">
+            <h1 class="hero-heading">
+                Decide <span class="modren">Wisely,</span> Choose <span class="modren">Freely</span>
+            </h1>
+            <p>Fulfill your career dreams, enjoy all the achievements of the <br> city center and luxury housing to the fullest.</p>
+           </div>
+            <div class="row py-5 Choose">
+                <div class="chooses col-md-4 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".2s">
+                    <div class="card border-0">
+                     <div class="card-body">
+                         <img src="assets/images/index-images/card-1.png" class="w-100" alt="">
+                         <div class="team-member-info p-4">
+                             <h6 class=" text-center font-weight-bold">See multiple personalized offers from top banks in the UAE</h6>                            </h2>
+                         </div>
+                     </div>
+                    </div>
+                 </div>
+
+                <div class="col-md-4 chooses col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".2s">
+                    <div class="card border-0">
+                     <div class="card-body">
+                         <img src="assets/images/index-images/card-2.png" class="w-100" alt="">
+                         <div class="team-member-info p-4">
+                             <h6 class=" text-center font-weight-bold">See multiple personalized offers from top banks in the UAE</h6>                            </h2>
+                         </div>
+                     </div>
+                    </div>
+                 </div>
+
+                <div class="col-md-4  col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".2s">
+                   <div class="card border-0">
+                    <div class="card-body">
+                        <img src="assets/images/index-images/card-1.png" class="w-100" alt="">
+                        <div class="team-member-info p-4">
+                            <h6 class=" text-center font-weight-bold">See multiple personalized offers from top banks in the UAE</h6>                            </h2>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+
+            </div>
+            <div class="text-center">
+             <a href="#" class="martal-button btn px-5 py-2  ">Let's Get Started</a>
+            </div>
+        </div>
+    </section>
 
 
-    <section class="matrl-about-section section-padding">
+    <div class="modren-section py-5">
         <div class="container">
-            <div class="row">
-
-                <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".2s">
-                    <div class="about-single">
-                        <i class="material-icons mdi mdi-flask-outline"></i>
-                        <h2 class="subtitle">Bootstrap 4</h2>
-                        <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui.</p>
-                    </div>
+            <div class="row py-5">
+                <div class="col-md-6">
+                    <img src="assets/images/index-images/about-1.png" class="w-100 h-100">
                 </div>
-
-                <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".3s">
-                    <div class="about-single">
-                        <i class="material-icons mdi mdi-lightbulb-on-outline"></i>
-                        <h2 class="subtitle">Material Design</h2>
-                        <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui.</p>
-                    </div>
+                <div class="col-md-6  pl-5 about-1">
+                    <h1 class="hero-heading">
+                        <span class="modren">About</span> us
+                    </h1>
+                    <h5 class="font-weight-bold">We believe buying a home should be something to celebrate</h5>
+                    <p class=" paragraph">Getting your own home is a high point in our lives, we want to build an experience that matches that feeling – without the hassle. That's why our mission is to simplify the home buying process and make it an actual enjoyable moment for everyone
+                    </p>
+                    <p class="paragraph">Getting your own home is a high point in our lives, we want to build an experience that matches that feeling – without the hassle.
+                    </p>
+                    <a href="#" class="martal-button btn px-5 py-2 ">Get Started</a>
+                    <div class="dots">
+                        <img src="assets/images/index-images/dots.png" class="">
+                     </div>
                 </div>
+            </div>
+        </div>
+     </div>
+     
 
-                <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".4s">
-                    <div class="about-single">
-                        <i class="material-icons mdi mdi-trending-up"></i>
-                        <h2 class="subtitle">Fast and Clean</h2>
-                        <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui.</p>
+    <section class="matrl-about-section section-padding trust-us">
+        <div class="container">
+            <div class="row pb3">
+                <div class="col-md-6 col-lg-6 col-xl-6 single-service-widget wow animated fadeInUp" data-wow-delay=".3s">
+                    <h1 class="hero-heading">
+                        Why <span class="modren">trust</span> us with the biggest <span class="modren">transaction</span> of your <span class="modren">life</span>?
+                    </h1>
+                    <div class="vector pb-4">
+                        <img src="/assets/images/index-images/arrow.png">
                     </div>
-                </div>
+                   <div class="box-left  text-white mt-5  py-4">
+                     <h5 class="">Working together is working better</h5>
+                     <p class="text-white mt-3 box-p">We have partnered with all the major banks, real estate agencies, and mortgage brokers in the UAE to ensure that you have an enjoyable journey with all the best offers along the way.
+                     </p>
+                    </div> 
+                  
 
-                <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".5s">
-                    <div class="about-single">
-                        <i class="material-icons mdi mdi-cellphone-link"></i>
-                        <h2 class="subtitle">Fully Responsive</h2>
-                        <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui.</p>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6 single-service-widget wow animated fadeInUp" data-wow-delay=".3s">
+                    <div class="box-right-1  text-white   pt-4 pb-3">
+                        <h5 class="text-white">Your success is our success</h5>
+                        <p class="text-white mt-3 box-p">With Huspy you can get your home financing process started in 30 min, saving you multiple visits to the bank. Our mortgage experts will always go the extra mile to make sure you get the best deals in the market. All in one place.
+                        </p>
+                       </div>
+                    <div class="box-right-2  text-white   py-4">
+                     <h5 class="text-dark">Your success is our success</h5>
+                     <p class="text-dark mt-3 box-p">We believe it’s about time that home buyers are empowered with the best information at every single stage of the journey, so they can make good decisions about their future. We want to see you succeed.
+                     </p>
                     </div>
                 </div>
             </div>
@@ -179,637 +273,163 @@
     </section>
 
 
-    <section class="welcome-section section-padding section-dark">
+    <section class="matrl-portfolio-section section-padding section-dark ">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-lg-7 col-xs-12">
-                    <div class="welcome-content">
-                        <div class="text">
-                            <h1>Create Stunning Websites in Easier and Effecient Way!</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                a type specimen book.</p>
-                            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-                                more recently. Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
-                        </div>
-                        <div class="button">
-                            <a href="" class="btn btn-common">
-Know More
-<div class="ripple-container"></div>
-</a>
-                        </div>
+            <div class="row py-3">
+                <div class="  col-md-12 pb-5">
+                    <h1 class="hero-heading text-center">
+                        <span class="modren">Estimate</span> how much you could <br> borrow from our <span class="modren"> bank partners </span>
+                    </h1>
+                     
+                    <p class="text-center mt-3">With a few details, you can get a quick preview of the loan amount you can get from our bank partners
+                    </p>
+                    <div class="vector-1 pb-5">
+                        <img src="/assets/images/index-images/arrow-1.png">
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-5 col-xs-12 welcome-column">
-                    <div class="video-gallery">
-                        <img class="img-fluid" src="assets/images/about/video.jpg" alt="">
-                        <div class="overlay-gallery">
-                            <div class="icon-holder">
-                                <div class="icon">
-                                    <a href="https://www.youtube.com/watch?v=r44RKWyfcFw" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="mdi mdi-play-circle-outline"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6 col-lg-4 col-xl-4 pb-4 mix business blog">
+                    <!-- /////////working panding////// -->
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class=" py-5 mb-5 offers">
+        <div class="container">
+            <div class="row">
+
+                <div class=" px-5 pt-4 col-md-6 col-lg-6 work-counter-widget text-center wow animated fadeInUp" data-wow-delay=".2s">
+                    <h4 class="h4  text-center text-white">
+                        <span class="modren">Explore</span> Bank Offers 
+                    </h4>
+                   <div class="pb-3 px-5 offer-descripation">
+                    <p class="text-white mt-3 text-start">We partner with the top banks in the UAE so we can show you the best offers available. Check out this easy-to-use tool to get a quick preview on available bank offers
+                    </p>
+                   </div>
+                    <a href="#" class="border  border-white text-white px-3 py-2">Explore Bank offers</a>
+                </div>
+
+                <div class=" col-md-6 col-lg-6 work-counter-widget text-center wow animated fadeInUp" data-wow-delay=".2s">
+                   <img src="assets/images/index-images/offer.png" class="w-100 h-100 ">
+                   <div class="dots-1">
+                    <img src="assets/images/index-images/dots.png" class="">
+                 </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="matrl-service-section section-padding">
-        <div class="container">
-            <div class="row">
 
-                <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-                    <h1 class="section-title">Services</h1>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-6 col-lg-4 col-xl-4 single-service-widget wow animated fadeInUp" data-wow-delay=".3s">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="material-icons pulse-shrink mdi mdi-chart-line-variant"></i>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="subtitle"><a href="#">Discovery & Strategy</a></h2>
-                            <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-4 single-service-widget wow animated fadeInUp" data-wow-delay=".4s">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="material-icons pulse-shrink mdi mdi-format-line-style"></i>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="subtitle"><a href="#">Interface Design</a></h2>
-                            <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-4 single-service-widget wow animated fadeInUp" data-wow-delay=".5s">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="material-icons pulse-shrink mdi mdi-fingerprint"></i>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="subtitle"><a href="#">Branding</a></h2>
-                            <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-4 single-service-widget wow animated fadeInUp" data-wow-delay=".6s">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="material-icons pulse-shrink mdi mdi-comment-outline"></i>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="subtitle"><a href="#">Communication</a></h2>
-                            <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-4 single-service-widget wow animated fadeInUp" data-wow-delay=".7s">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="material-icons pulse-shrink mdi mdi-monitor-multiple"></i>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="subtitle"><a href="#">Multimedia Production</a></h2>
-                            <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-4 single-service-widget wow animated fadeInUp" data-wow-delay=".8s">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="material-icons pulse-shrink mdi mdi-code-tags"></i>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="subtitle"><a href="#">Development solutions</a></h2>
-                            <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="matrl-portfolio-section section-padding section-dark">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 col-lg-4 col-xl-6  matrl-title-section wow animated fadeInLeft" data-wow-delay=".2s">
-                    <h1 class="section-title">Portfolio</h1>
-                </div>
-
-                <div class="col-md-8 col-lg-8 col-xl-6  portfolio-nav mt-3 mb-3 wow animated fadeInRight" data-wow-delay=".2s">
-                    <ul class="nav nav-pills">
-                        <li><a class="filter active" data-filter="all">All</a></li>
-                        <li><a class="filter" data-filter=".business">Business</a></li>
-                        <li><a class="filter" data-filter=".creative">Creative</a></li>
-                        <li><a class="filter" data-filter=".education">Education</a></li>
-                        <li><a class="filter" data-filter=".blog">Blog</a></li>
-                        <li><a class="filter" data-filter=".free">Free</a></li>
-                        <li><a class="filter" data-filter=".more">More</a></li>
-                    </ul>
-                </div>
-                <div class="portfolio-item-wrapper clearfix wow animated fadeInUp" data-wow-delay=".5s" id="matrl-portfolio">
-
-                    <div class="col-md-6 col-lg-4 col-xl-4 pb-4 mix business blog">
-                        <figure class="single-portfolio">
-                            <img class="img-fluid" src="assets/images/portfolio/work1.jpg" alt="">
-                            <figcaption class="hover-content">
-                                <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                                <a href="portfolio-single.html">
-                                    <h2 class="subtitle">A boat of hope</h2>
-                                </a>
-                                <p>Istambul, Turkey</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-4 mix education more">
-                        <figure class="single-portfolio">
-                            <img class="img-fluid" src="assets/images/portfolio/work2.jpg" alt="">
-                            <figcaption class="hover-content">
-                                <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                                <a href="portfolio-single.html">
-                                    <h2 class="subtitle">Visit to moon</h2>
-                                </a>
-                                <p>Nasa, USA</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-4 mix free education blog">
-                        <figure class="single-portfolio">
-                            <img class="img-fluid" src="assets/images/portfolio/work3.jpg" alt="">
-                            <figcaption class="hover-content">
-                                <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                                <a href="portfolio-single.html">
-                                    <h2 class="subtitle">Lighthouse of Cox</h2>
-                                </a>
-                                <p>Chittagong, Bangladesh</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-4 mix creative more business">
-                        <figure class="single-portfolio">
-                            <img class="img-fluid" src="assets/images/portfolio/work4.jpg" alt="">
-                            <figcaption class="hover-content">
-                                <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                                <a href="portfolio-single.html">
-                                    <h2 class="subtitle">Bug of the day</h2>
-                                </a>
-                                <p>Delhi, India</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-4 mix more free creative">
-                        <figure class="single-portfolio">
-                            <img class="img-fluid" src="assets/images/portfolio/work5.jpg" alt="">
-                            <figcaption class="hover-content">
-                                <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                                <a href="portfolio-single.html">
-                                    <h2 class="subtitle">Loard of the ring</h2>
-                                </a>
-                                <p>Novel, USA</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 col-xl-4 mix blog business">
-                        <figure class="single-portfolio">
-                            <img class="img-fluid" src="assets/images/portfolio/work6.jpg" alt="">
-                            <figcaption class="hover-content">
-                                <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                                <a href="portfolio-single.html">
-                                    <h2 class="subtitle">Wings of paper</h2>
-                                </a>
-                                <p>Venis, Italy</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4 wow animated fadeInUp" data-wow-delay=".3s">
-                <div class="col-md-12 text-center">
-                    <a href="javascript:void(0)" class="animated4 btn btn-common" data-ripple-color="#000"><i class="material-icons mdi mdi-lightbulb-outline"></i> Explore more work<div class="ripple-container"></div></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="work-counter-section section-padding">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-3 col-sm-6 work-counter-widget text-center wow animated fadeInUp" data-wow-delay=".2s">
-                    <div class="counter">
-                        <div class="icon"><i class="material-icons mdi mdi-check-all"></i></div>
-                        <div class="timer">768</div>
-                        <p>Project Delivered</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 work-counter-widget text-center wow animated fadeInUp" data-wow-delay=".3s">
-                    <div class="counter">
-                        <div class="icon"><i class="material-icons mdi mdi-clock"></i></div>
-                        <div class="timer">900</div>
-                        <p>Working Hours</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 work-counter-widget text-center wow animated fadeInUp" data-wow-delay=".4s">
-                    <div class="counter">
-                        <div class="icon"><i class="material-icons mdi mdi-cellphone-link"></i></div>
-                        <div class="timer">215</div>
-                        <p>Work Station</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 work-counter-widget text-center wow animated fadeInUp" data-wow-delay=".5s">
-                    <div class="counter">
-                        <div class="icon"><i class="material-icons mdi mdi-cisco-webex"></i></div>
-                        <div class="timer">553</div>
-                        <p>International Clients</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="team section-padding section-dark">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-                    <h1 class="section-title">Our Team</h1>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".3s">
-                    <div class="single-team-widget">
-                        <img src="assets/images/team/team1.jpg" class="img-fluid" alt="">
-                        <div class="team-member-info">
-                            <div class="know-more">
-                                <a class="btn btn-round btn-fab btn-xs" href="javascript:void(0)"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                            </div>
-                            <h2 class="subtitle">Rob Percy</h2>
-                            <p>Co-Founder</p>
-                            <div class="social-profiles">
-                                <a href="#"><i class="mdi mdi-twitter"></i></a>
-                                <a href="#"><i class="mdi mdi-facebook"></i></a>
-                                <a href="#"><i class="mdi mdi-dribbble"></i></a>
-                                <a href="#"><i class="mdi mdi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".4s">
-                    <div class="single-team-widget">
-                        <img src="assets/images/team/team2.jpg" class="img-fluid" alt="">
-                        <div class="team-member-info">
-                            <div class="know-more">
-                                <a class="btn btn-round btn-fab btn-xs" href="javascript:void(0)"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                            </div>
-                            <h2 class="subtitle">Jennifer L.</h2>
-                            <p>Graphic Designer</p>
-                            <div class="social-profiles">
-                                <a href="#"><i class="mdi mdi-twitter"></i></a>
-                                <a href="#"><i class="mdi mdi-facebook"></i></a>
-                                <a href="#"><i class="mdi mdi-dribbble"></i></a>
-                                <a href="#"><i class="mdi mdi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".5s">
-                    <div class="single-team-widget">
-                        <img src="assets/images/team/team3.jpg" class="img-fluid" alt="">
-                        <div class="team-member-info">
-                            <div class="know-more">
-                                <a class="btn btn-round btn-fab btn-xs" href="javascript:void(0)"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                            </div>
-                            <h2 class="subtitle">Tom Hanks.</h2>
-                            <p>SEO Speacialist</p>
-                            <div class="social-profiles">
-                                <a href="#"><i class="mdi mdi-twitter"></i></a>
-                                <a href="#"><i class="mdi mdi-facebook"></i></a>
-                                <a href="#"><i class="mdi mdi-dribbble"></i></a>
-                                <a href="#"><i class="mdi mdi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".6s">
-                    <div class="single-team-widget">
-                        <img src="assets/images/team/team4.jpg" class="img-fluid" alt="">
-                        <div class="team-member-info">
-                            <div class="know-more">
-                                <a class="btn btn-round btn-fab btn-xs" href="javascript:void(0)"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                            </div>
-                            <h2 class="subtitle">Emma Watson</h2>
-                            <p>Head Of Ideas</p>
-                            <div class="social-profiles">
-                                <a href="#"><i class="mdi mdi-twitter"></i></a>
-                                <a href="#"><i class="mdi mdi-facebook"></i></a>
-                                <a href="#"><i class="mdi mdi-dribbble"></i></a>
-                                <a href="#"><i class="mdi mdi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
+         <div class="container">
+             <h3 class="h3 font-weight-bold">Testimonials</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Purus rutrum donec ultricies cras id ac.</p>
+         </div>
     <div class="testimonial section-padding">
         <div class="container">
+            
             <div class="row">
 
                 <div class="testimonials-carousel owl-carousel">
-                    <div class="item">
-                        <div class="testimonial-item">
-                            <div class="img">
-                                <a href="#"><img class="img-fluid" src="assets/images/testimonial/author1.jpg" alt=""></a>
-                            </div>
-                            <div class="datils">
-                                <h5>Adam Schwartz</h5>
-                                <span>Software Articulate, Google</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's <br> standard dummy text ever since the 1500s Lorem Ipsum.</p>
-                            </div>
+                    <div class="item d-flex" >
+                        <div class="testi-card py-4">
+                            <div class="d-flex px-4">
+                                <img src="assets/images/index-images/invert.png" class="invert">
+                                <p class="d-inline ml-2 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. Dictumst nunc placerat ultricies pretium.</p>
+                             </div>
+                             <div class="testi-name pl-3">
+                                <h6 class="font-weight-bold">
+                                    Usama Tariq
+                                </h6>
+                                <p class="descripation">3 bedroom apartmentt in Madrid</p>
+                             </div>
+                        </div>
+                        <div class="testi-card py-4 ml-4">
+                            <div class="d-flex px-4">
+                                <img src="assets/images/index-images/invert.png" class="invert">
+                                <p class="d-inline ml-2 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. Dictumst nunc placerat ultricies pretium.</p>
+                             </div>
+                             <div class="testi-name pl-3">
+                                <h6 class="font-weight-bold">
+                                    Usama Tariq
+                                </h6>
+                                <p class="descripation">3 bedroom apartmentt in Madrid</p>
+                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="testimonial-item">
-                            <div class="img">
-                                <a href="#"><img class="img-fluid" src="assets/images/testimonial/author2.jpg" alt=""></a>
-                            </div>
-                            <div class="datils">
-                                <h5>Clark Brown</h5>
-                                <span>Brand Managerr</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's <br> standard dummy text ever since the 1500s Lorem Ipsum.</p>
-                            </div>
+                    <div class="item d-flex" >
+                        <div class="testi-card py-4">
+                            <div class="d-flex px-4">
+                                <img src="assets/images/index-images/invert.png" class="invert">
+                                <p class="d-inline ml-2 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. Dictumst nunc placerat ultricies pretium.</p>
+                             </div>
+                             <div class="testi-name pl-3">
+                                <h6 class="font-weight-bold">
+                                    Usama Tariq
+                                </h6>
+                                <p class="descripation">3 bedroom apartmentt in Madrid</p>
+                             </div>
+                        </div>
+                        <div class="testi-card py-4 ml-4">
+                            <div class="d-flex px-4">
+                                <img src="assets/images/index-images/invert.png" class="invert">
+                                <p class="d-inline ml-2 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. Dictumst nunc placerat ultricies pretium.</p>
+                             </div>
+                             <div class="testi-name pl-3">
+                                <h6 class="font-weight-bold">
+                                    Usama Tariq
+                                </h6>
+                                <p class="descripation">3 bedroom apartmentt in Madrid</p>
+                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="testimonial-item">
-                            <div class="img">
-                                <a href="#"><img class="img-fluid" src="assets/images/testimonial/author3.jpg" alt=""></a>
-                            </div>
-                            <div class="datils">
-                                <h5>Ana Blunt</h5>
-                                <span>Creative Director</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's <br> standard dummy text ever since the 1500s Lorem Ipsum.</p>
-                            </div>
+                    <div class="item d-flex" >
+                        <div class="testi-card py-4">
+                            <div class="d-flex px-4">
+                                <img src="assets/images/index-images/invert.png" class="invert">
+                                <p class="d-inline ml-2 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. Dictumst nunc placerat ultricies pretium.</p>
+                             </div>
+                             <div class="testi-name pl-3">
+                                <h6 class="font-weight-bold">
+                                    Usama Tariq
+                                </h6>
+                                <p class="descripation">3 bedroom apartmentt in Madrid</p>
+                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="client section-padding section-dark">
-        <div class="container">
-            <div class="row">
-                <div id="client-logo" class="owl-carousel">
-                    <div class="client-logo item">
-                        <a href="#">
-<img class="img-fluid" src="assets/images/clients/client1.png" alt="" />
-</a>
-                    </div>
-                    <div class="client-logo item">
-                        <a href="#">
-<img class="img-fluid" src="assets/images/clients/client2.png" alt="" />
-</a>
-                    </div>
-                    <div class="client-logo item">
-                        <a href="#">
-<img class="img-fluid" src="assets/images/clients/client3.png" alt="" />
-</a>
-                    </div>
-                    <div class="client-logo item">
-                        <a href="#">
-<img class="img-fluid" src="assets/images/clients/client4.png" alt="" />
-</a>
-                    </div>
-                    <div class="client-logo item">
-                        <a href="#">
-<img class="img-fluid" src="assets/images/clients/client1.png" alt="" />
-</a>
-                    </div>
-                    <div class="client-logo item">
-                        <a href="#">
-<img class="img-fluid" src="assets/images/clients/client2.png" alt="" />
-</a>
-                    </div>
-                    <div class="client-logo item">
-                        <a href="#">
-<img class="img-fluid" src="assets/images/clients/client3.png" alt="" />
-</a>
-                    </div>
-                    <div class="client-logo item">
-                        <a href="#">
-<img class="img-fluid" src="assets/images/clients/client4.png" alt="" />
-</a>
+                        <div class="testi-card py-4 ml-4">
+                            <div class="d-flex px-4">
+                                <img src="assets/images/index-images/invert.png" class="invert">
+                                <p class="d-inline ml-2 pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique in pellentesque ultrices et massa neque, convallis lorem. Erat proin in posuere dui accumsan lorem. Diam nunc scelerisque mi vestibulum scelerisque mi ac nisi. Dictumst nunc placerat ultricies pretium.</p>
+                             </div>
+                             <div class="testi-name pl-3">
+                                <h6 class="font-weight-bold">
+                                    Usama Tariq
+                                </h6>
+                                <p class="descripation">3 bedroom apartmentt in Madrid</p>
+                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <section class="matrl-blog-section section-padding">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-                    <h1 class="section-title">Our Stories</h1>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".3s">
-                    <article class="single-blog-post">
-
-                        <div class="featured-image">
-                            <a href="#">
-<img src="assets/images/blog/featured1.jpg" alt="">
-</a>
-                        </div>
-
-                        <div class="post-meta">
-
-                            <a href="blog-single.html">
-                                <h2 class="subtitle">MUSIC for refreshment</h2>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio perferendis assumenda ipsum maiores dolorum similique obcaecati perspiciatis.</p>
-                        </div>
-                        <div class="meta-tags">
-                            <span class="comments"><a href="#"><i class="mdi mdi-comment-outline"></i> 24 Comments</a></span>
-
-                            <a class="btn btn-round btn-fab" href="blog-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".4s">
-                    <article class="single-blog-post">
-
-                        <div class="featured-image">
-                            <a href="#">
-<img src="assets/images/blog/featured2.jpg" alt="">
-</a>
-                        </div>
-
-                        <div class="post-meta">
-
-                            <a href="blog-single.html">
-                                <h2 class="subtitle">We support your custom</h2>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio perferendis assumenda ipsum maiores dolorum similique obcaecati perspiciatis.</p>
-                        </div>
-                        <div class="meta-tags">
-                            <span class="comments"><a href="#"><i class="mdi mdi-comment-outline"></i> 24 Comments</a></span>
-
-                            <a class="btn btn-round btn-fab" href="blog-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".5s">
-                    <article class="single-blog-post">
-
-                        <div class="featured-image">
-                            <a href="#">
-<img src="assets/images/blog/featured3.jpg" alt="">
-</a>
-                        </div>
-
-                        <div class="post-meta">
-
-                            <a href="blog-single.html">
-                                <h2 class="subtitle">We love photography</h2>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio perferendis assumenda ipsum maiores dolorum similique obcaecati perspiciatis.</p>
-                        </div>
-                        <div class="meta-tags">
-                            <span class="comments"><a href="#"><i class="mdi mdi-comment-outline"></i> 24 Comments</a></span>
-
-                            <a class="btn btn-round btn-fab" href="blog-single.html"><i class="material-icons mdi mdi-arrow-right"></i><div class="ripple-container"></div></a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="row mt-5 wow animated fadeInUp" data-wow-delay=".6s">
-
-                <div class="col-md-12 text-center">
-                    <a href="blog.html" class="animated4 btn btn-common" data-ripple-color="#000"><i class="material-icons mdi mdi-lightbulb-outline"></i> Explore More Stories<div class="ripple-container"></div></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="matrl-contact-section section-padding section-dark">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-                    <h1 class="section-title">Contact Us</h1>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                        using Content.</p>
-                    <div class="find-widget">
-                        <a href="#"><i class="material-icons mdi mdi-map-marker"></i>4435 Berkshire Circle Knoxville</a>
-                    </div>
-                    <div class="find-widget">
-                        <a href="#"><i class="material-icons mdi mdi-phone"></i> + 879-890-9767</a>
-                    </div>
-                    <div class="find-widget">
-                        <a href="#"><i class="material-icons mdi mdi-email-open mr-3"></i> <span class="__cf_email__" data-cfemail="20535550504f5254604d4154524c0e434f4d">[email&#160;protected]</span></a>
-                    </div>
-                    <div class="find-widget">
-                        <a href="#"><i class="material-icons mdi mdi-clock"></i> Mon to Sat: 09:30 AM - 10.30 PM</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
-                    <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-
-                        <div class="form-group label-floating">
-                            <label class="control-label" for="name">Name</label>
-                            <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-                        <div class="form-group label-floating">
-                            <label class="control-label" for="email">Email</label>
-                            <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-                        <div class="form-group label-floating">
-                            <label class="control-label">Subject</label>
-                            <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-                        <div class="form-group label-floating">
-                            <label for="message" class="control-label">Message</label>
-                            <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-                        <div class="form-submit mt-5">
-                            <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
-                            <div id="msgSubmit" class="h3 text-center hidden"></div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <footer class="page-footer center-on-small-only  pt-0 footer-widget-container">
 
         <div class="container pt-5 mb-5">
             <div class="row pl-5 py-3">
 
                 <div class="col-md-3  footer-contact-widget">
-                  <img src="assets/images/paper-plane 1.png" class="w-75">
+                  <img src="assets/images/index-images/paper-plane 1.png" class="w-75">
                 </div>
                 <div class="col-md-9 recent-widget  pt-4">
                     <h3 class="footer-title">Subscribe to newsletter </h3>
                     <p>Get the latest news and interesting offers and real estate</p>
-                    <input class="py-1 px-2 rounded border-0 " id="email" type="email" name="email" required="" placeholder="Your e-mail address" data-error="Please enter your Email">
-                    <a class="btn login ml-2 " href="#">Subscribe</a>
+                    <div class="pt-2">
+                        <input class="foot-email  rounded border-0 " id="email" type="email" name="email" required="" placeholder="Your e-mail address" data-error="Please enter your Email">
+                        <a class="btn foot-btn ml-2 " href="#">Subscribe</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -820,10 +440,10 @@ Know More
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="">
-                        <img src="assets/images/footer logo.png" alt="">
+                        <img src="assets/images/index-images/footer logo.png" alt="">
                         </div>
                         <div class="footer-logo">
-                        <img src="assets/images/Real Estate.png" alt=""> 
+                        <img src="assets/images/index-images/Real Estate.png" alt=""> 
                         </div>
                     </div>
                 </div>

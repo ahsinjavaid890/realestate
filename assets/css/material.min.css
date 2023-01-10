@@ -1750,11 +1750,11 @@ output {
 .form-control,
 .form-group .form-control {
     border: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
     background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
     background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
     background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
-    -webkit-background-size: 0 2px, 100% 1px;
+    -webkit-background-size: 0 2px, 100% 1px; */
     background-size: 0 2px, 100% 1px;
     background-repeat: no-repeat;
     background-position: center bottom, center -webkit-calc(100% - 1px);
@@ -1831,7 +1831,7 @@ fieldset[disabled] .form-group .form-control {
     display: none
 }
 
-.form-group.is-focused .form-control {
+/* .form-group.is-focused .form-control {
     outline: 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
     background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
@@ -1848,7 +1848,7 @@ fieldset[disabled] .form-group .form-control {
 
 .form-group.is-focused .form-control .material-input:after {
     background-color: #009688
-}
+} */
 
 .form-group.is-focused label,
 .form-group.is-focused label.control-label {
@@ -2588,8 +2588,8 @@ legend {
     border-radius: 2px;
     color: rgba(0, 0, 0, .87);
     background: #fff;
-    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
+    /* -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19) */
 }
 
 .card .card-height-indicator {
@@ -2628,7 +2628,6 @@ legend {
 
 .card .card-body {
     height: 30%;
-    padding: 18px
 }
 
 .card .card-footer {

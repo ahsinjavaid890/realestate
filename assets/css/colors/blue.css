@@ -133,7 +133,7 @@ a.back-to-top i {
 
 .owl-carousel .owl-controls .owl-page.active span {
     border: none;
-    background: #fff !important;
+    background: #00B0BB !important;
     opacity: 1;
 }
 
@@ -209,13 +209,13 @@ ul.footer-contact li span {
     border-bottom: 4px solid #2196F3 !important;
 }
 
-.form-group.is-focused .form-control {
+/* .form-group.is-focused .form-control {
     outline: 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#2196F3), to(#2196F3)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
     background-image: -webkit-linear-gradient(#2196F3, #2196F3), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
     background-image: -o-linear-gradient(#2196F3, #2196F3), -o-linear-gradient(#D2D2D2, #D2D2D2);
     background-image: linear-gradient(#2196F3, #2196F3), linear-gradient(#D2D2D2, #D2D2D2);
-}
+} */
 
 .page-footer .footer-title::before {
     background: #2196F3;
