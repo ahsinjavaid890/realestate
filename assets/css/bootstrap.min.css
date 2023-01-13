@@ -1918,7 +1918,6 @@ pre code {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #495057;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -4144,7 +4143,10 @@ input[type=submit].btn-block {
     justify-content: space-between;
     padding: .5rem 1rem
 }
-
+header .container{
+    max-width: 1200px !important;
+    margin: auto;
+}
 .navbar>.container,
 .navbar>.container-fluid {
     display: -ms-flexbox;

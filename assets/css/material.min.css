@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: Merriweather;
     font-weight: 300
 }
 
@@ -1933,11 +1933,11 @@ fieldset[disabled] .form-group .form-control {
     margin-top: -11px
 }
 
-.form-group select {
+/* .form-group select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none
-}
+} */
 
 .form-group select~.material-input:after {
     display: none
@@ -3031,10 +3031,10 @@ hr.on-light {
 [disabled] .noUi-handle {
     cursor: not-allowed
 }
-
+/* 
 .slider {
     background: #c8c8c8
-}
+} */
 
 .slider.noUi-connect,
 .slider.slider-default.noUi-connect {

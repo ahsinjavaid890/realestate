@@ -95,7 +95,9 @@ body {
     backface-visibility: hidden;
     overflow-x: hidden;
 }
-
+.bg-link{
+    background-color: #00B0BB;
+}
 h1,
 h2,
 h3,
@@ -204,7 +206,7 @@ a a:focus {
 .inner-title {
     font-size: 24px;
     font-weight: 900;
-    text-tranform: capitalize;
+    text-transform: capitalize;
 }
 
 .page-tagline {
@@ -409,7 +411,7 @@ a.back-to-top:focus {
 }
 
 .section-padding {
-    padding: 60px 0;
+    padding: 55px 0;
 }
 
 .no-padding {
@@ -538,7 +540,7 @@ a.back-to-top:focus {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     text-transform: capitalize;
-    margin-left: 30px;
+    margin-left: 60px;
     margin-top: 0px;
     border-top: 3px solid transparent;
     -webkit-transition: all 0.3s ease-in-out 0s;
@@ -1894,12 +1896,12 @@ figure:hover figcaption {
 .page-footer .footer-title {
     /* position: relative;
     text-transform: uppercase; */
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     /* letter-spacing: 0.1rem; */
 }
 .footer-contact-widget img{
-    opacity: 0.3;
+    opacity: 0.1;
 } 
 
 .page-footer p {
@@ -1990,7 +1992,7 @@ figure:hover figcaption {
     text-align: center;
     line-height: 40px;
     border-radius: 2px;
-    transtion: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .footer-contact-widget ul li a .mdi:hover {
@@ -2652,7 +2654,8 @@ ul.recent-post li .post-text span {
 .foot-btn{
     border: 2px solid #00B0BB;
     color: #00B0BB !important;
-    padding: 7.5px 20px !important;
+    padding: 7px 25px !important;
+    margin-top: 7px;
 }
 .login{
     border: 2px solid #00B0BB;
@@ -2811,7 +2814,61 @@ p{
     width: 570px !important;
 } */
 .foot-email{
-    padding: 8px;
+    padding: 6px 14px;
+    border: 1px solid #e2e0e0 !important;
+}
+.loan-calculator{
+    background-color: #f2f2f2;
+}
+.loan-heading{
+    font-size: 16px;
+}
+.resident{
+    border: 0.5px solid #00B0BB;
+}
+.loan-calculator h6{
+    font-size: 14px;
+}
+.loan-calculator select  option{
+    font-size: 14px !important;
+}
+.loan-calculator .ages{
+    margin-top: -10px;
+}
+.loan-calculator .ages span{
+    color: rgb(182, 180, 180);
+    font-size: 14px;
+}
+.loan-calculator .apply-loan{
+    background-color: #00B0BB;
+}
+.loan-calculator-side{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.loan-calculator-side span{
+    line-height: 35px;
+}
+.loan-calculator-side span strong{
+    font-size: 44px;
+    line-height: 43px;
+}
+.loan-calculator-side p{
+    font-size: 17px !important;
+    line-height: 22px !important;
+    font-weight: 500 !important;
+}
+.mortgage-process h5{
+    font-size: 30px;
+    font-weight: 700 !important;
+}
+.mortgage-process p{
+    font-size: 20px !important;
+}
+.mortgage-process{
+    border-radius: 10px;
+}
+.mortgage-process a{
+    border:  2px solid white;
 }
 /* ///////////// media querries of index page ///////// */
 @media screen and (min-width:250px) and (max-width:1000px) {
@@ -2904,7 +2961,28 @@ p{
     .login-box{
         text-align: center;
     }
-    
+    .loan-calculator-side{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:200px) and (max-width:299px) {
+    .mortgage-process h5 {
+        font-size: 15px;
+    }
+    .mortgage-process p {
+        font-size: 14px !important;
+    }
+    .mortgage-process a{
+        font-size: 13px;
+    }
+}
+ @media screen and (min-width:300px) and (max-width:767px) {
+    .mortgage-process h5 {
+        font-size: 25px;
+    }
+    .mortgage-process p {
+        font-size: 16px !important;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1000px){
     .modren-vector-content{
@@ -2961,6 +3039,10 @@ p{
     }
     .blog-card-2{
         margin-left: 14px !important;
+    }
+    .loan-calculator-side p {
+        text-align: justify !important;
+        margin-top: 30px !important;
     }
 }
 @media screen and (min-width:1000px) and (max-width:1099px){
@@ -3455,23 +3537,23 @@ input[type=checkbox], input[type=radio] {
             left: 80px !important;
         }
     }
-
+  /* /////// get started end //// */
 
 
 
 
     /* ////////// About us //////// */
-    body{
+    /* body{
         font-family:  Merriweather !important;
-    }
-    body p{
+    } */
+    /* body p{
         font-family: Open Sans;
         font-style: normal;
         font-weight: 400;
-    }
-    .navbar-header a{
+    } */
+    /* .navbar-header a{
         color: #fff !important;
-    }
+    } */
     .navbar-position{
         position: absolute;
         top: 0px;
@@ -3602,23 +3684,23 @@ input[type=checkbox], input[type=radio] {
     }
 
     @media screen and (max-width: 1200px){
-        .modren-vector {
+        .about-modren-vector {
             left: -5px;
             top: -15px;
         }
     }
     @media screen and (max-width: 993px){
-        .modren-vectors img {
+        .about-modren-vectors img {
             width: 425px;
             height: 450px;
         }
-        .modren-vector {
+        .about-modren-vector {
             left: 15px;
             top: 110px;
         }
     }
     @media screen and (max-width: 768px){
-        .modren-vectors{
+        .about-modren-vectors{
             display: none !important;
         }
         .modren-relative h1{
@@ -3634,7 +3716,7 @@ input[type=checkbox], input[type=radio] {
             margin-top: 0px !important;
             margin-bottom: 0px !important;
         }
-    }
+    
 
     @media screen and (max-width: 1250px){
         .comma-left {
@@ -3753,7 +3835,7 @@ input[type=checkbox], input[type=radio] {
             width: 80px;
             height: 65px;
         }
-    }invester
+    }
 
     @media screen and (max-width: 768px){
         .invester h1{
@@ -3838,6 +3920,802 @@ input[type=checkbox], input[type=radio] {
         }
     }
 
-    @media screen and (max-width: 549px){
-        
+   .about-us .nav-item .nav-link{
+    color: white !important;
+   }
+   /* ////////////////// financing ortgage calculator //////// */
+   .financing-ortgage-head{
+    background-color: #00B0BB;
+   }
+   .finacing-ghar-image{
+    height: 250px ;
+   }
+   .finacing-vector img{
+    width: 200px;
+   }
+   .finacing-vector{
+    position: absolute;
+    right: 50px;
+    bottom: 110px;
+   }
+   .finacing-ghar-content span{
+    font-size: 28px;
+    position: absolute;
+    top: 115px;
+    left: 20px;
+   }
+   .let-the-future{
+    background-image: url("/assets/images/Financing_ortgage/background.png");
+    height: 280px;
+    background-position: center;
+   }
+   @media screen and (min-width:200px) and (max-width:299px) {
+    .financing-ortgage-head h1{
+        font-size: 25px !important;
     }
+    .finacing-ghar-content span {
+        font-size: 16px;
+        position: absolute;
+        top: 135px;
+        left: 20px;
+    }
+.finacing-vector {
+    position: absolute;
+    right: 0px;
+    bottom: -25px;
+}
+.finacing-vector img {
+    width: 110px;
+}
+.let-the-future{
+    text-align: start !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+.let-the-future h1{
+    font-size: 20px;
+}
+.let-the-future p{
+    font-size: 15px;
+    text-align: justify !important;
+}
+   }
+   @media screen and (min-width:301px) and (max-width:767px) {
+    .financing-ortgage-head h1{
+        font-size: 30px !important;
+    }
+    .finacing-ghar-content span {
+        font-size: 16px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+   }
+   @media screen and (min-width:350px) and (max-width:360px){
+    .finacing-vector {
+        position: absolute;
+        right: 10px;
+        bottom: 50px;
+    }
+   }
+   @media screen and (min-width:361px) and (max-width:380px){
+    .finacing-vector {
+        position: absolute;
+        right: 10px;
+        bottom: -20px;
+    }
+   }
+   @media screen and (min-width:381px) and (max-width:400px){
+    .finacing-vector {
+        position: absolute;
+        right: 10px;
+        bottom: 155px;
+    }
+   }
+   @media screen and (min-width:401px) and (max-width:450px){
+    .finacing-vector {
+        position: absolute;
+        right: 10px;
+        bottom: 217px;
+    }
+   }
+   @media screen and (min-width:501px) and (max-width:550px){
+    .finacing-vector {
+        position: absolute;
+        right: 10px;
+        bottom: 27px;
+    }
+   }
+   @media screen and (min-width:768px) and (max-width:1030px){
+    .finacing-ghar-content span {
+        font-size: 28px;
+        position: absolute;
+        top: 95px;
+        left: 60px;
+    }
+    .financing-ortgage-head .col-md-10{
+        padding-left: 110px !important;
+        padding-top: 70px !important;
+    }
+   }
+   @media screen and (min-width:768px) and (max-width:800px){
+    .finacing-vector {
+        position: absolute;
+        right: 10px;
+        bottom: 500px;
+    }
+}
+@media screen and (min-width:801px) and (max-width:900px){
+    .finacing-vector {
+        position: absolute;
+        right: 10px;
+        bottom: 650px;
+    }
+}
+@media screen and (min-width:901px) and (max-width:1000px){
+    .finacing-vector {
+        position: absolute;
+        right: 65px;
+        bottom: 840px;
+    }
+}
+@media screen and (min-width:1001px) and (max-width:1050px){
+    .finacing-vector {
+        position: absolute;
+        bottom: 55px;
+    }
+    .finacing-ghar-content span {
+        font-size: 28px;
+        position: absolute;
+        top: 100px;
+        left: 55px;
+    }
+}
+@media screen and (min-width:1251px) and (max-width:1300px){
+    .finacing-vector {
+        position: absolute;
+        bottom: 260px;
+    }
+    .financing-ortgage-head .col-md-10{
+        padding-top: 60px !important;
+        padding-left: 40px !important;
+    }
+    .finacing-ghar-content span {
+        font-size: 26px;
+        position: absolute;
+        top: 115px;
+        left: 29px;
+    }
+}
+/* //////// privacy policy ////// */
+.privacy-policy p{
+    line-height: 30px !important;
+}
+/* //////// properties-1 ///// */
+.search-your-place{
+    background-color: #00B0BB;
+    padding: 100px 0px;
+}
+.search-form{
+    max-width: 900px;
+    margin: auto;
+}
+.search-form a{
+    padding: 13px  60px;
+    margin-left: 3px;
+}
+.search-form h6{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 8px;
+}
+.search-form input{
+    width: 160px ;
+    border: 0.5px solid rgba(220, 224, 224, 1) !important;
+    height: 42px;
+    }
+.properties-links h1{
+    font-size: 61px;
+    line-height: 50px;
+}
+.properties-links a{
+    padding: 15px 20px;
+    font-size: 15px;
+    font-family: Open sans !important;
+    border-radius: 30px;
+    border: 1px solid #00B0BB;
+}
+.properties-links a:hover{
+    background-color: #00B0BB;
+    color: white !important;
+}
+.properties-links p{
+    font-size: 19.25px;
+    opacity: 1  !important;
+}
+.properties-slider .card{
+    width: 350px !important;
+    margin: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+    border-radius: 10px;
+}
+.properties-slider img {
+    height: 278px;
+}
+.properties-slider .card .card-title{
+    font-size: 25px;
+    line-height: 26px;
+}
+.properties-slider .card h5{
+    color: #00B0BB !important;
+    font-family: open sans !important;
+}
+.properties-slider .card h6{
+    font-size: 17px;
+}
+.properties-slider a{
+    padding: 20px 90px;
+    font-size: 30px ;
+}
+.second-property-section .see-all{
+   padding: 12px 10px;
+}
+.second-property-section{
+    background-color: 
+    rgba(243, 243, 250, 1);
+}
+.property-brand img{
+    height: 50px;
+}
+.slick-prev:before {
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: black !important;
+}
+.slick-next:before {
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: black !important;
+}
+.slick-prev {
+    left: -50px;
+}
+.slick-next {
+    right: -50px;
+}
+@media screen and (min-width:200px) and (max-width:300px) {
+    .property-brand .binnace-image{
+        width: 185px;
+    }
+    .properties-slider .card{
+        width: 250px !important;
+        margin: 0px;
+    }
+    .foot-email {
+        padding: 6px 6px;
+        border: 1px solid #e2e0e0 !important;    
+}
+.recent-widget{
+    padding-left: 0px !important;
+}
+.footer-title{
+    font-size: 18px;
+}
+.second-property-section .see-all {
+    padding: 10px !important;
+    font-size: 14px !important;
+
+}
+.properties-links h1 {
+    font-size: 49px;
+    line-height: 40px;
+}
+.properties-slider .card .card-title {
+    font-size: 19px;
+    line-height: 20px;
+}
+.slick-prev {
+    left: 10px;
+    z-index: 1;
+}
+.slick-next {
+    right: 10px;
+    z-index: 1;
+    font-size: 50px;
+}
+}
+@media screen and (min-width:200px) and (max-width:767px) {
+    .back-to-top{
+        display: none !important;
+    }
+    .footer-contact-widget img{
+        width: 100% !important;
+    }
+    .serach-form-display{
+        flex-direction: column !important;
+    }
+    .search-form a{
+        display: block;
+    }
+    .search-form input{
+        width: 100% !important;
+    }
+    .budget-input{
+        margin-bottom: 10px;
+    }
+    .search-form h3{
+        font-size: 18px ;
+    }
+    .property-link-row{
+        flex-direction: column !important;
+    }
+    .properties-links-section{
+        margin-top: 20px;
+    }
+
+    .properties-links a{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .second-property-section .see-all {
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+    .properties-links-section1{
+        padding-bottom: 0px !important;
+    }
+    .properties-links-section2{
+        padding-top: 0px !important;
+    }
+    .property-brand img{
+        margin-bottom: 10px;
+    }
+    .slick-slide{
+        margin-left: 0px !important;
+    }
+    .properties-slider a {
+        padding: 20px 80px;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:900px) {
+    .properties-links h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .properties-links a {
+            padding: 10px 10px;
+       }
+    .search-form a {
+        padding: 13px 40px;
+        margin-left: 3px;
+    }
+    .search-form input {
+        width: 120px !important;
+        border: 0.5px solid rgba(220, 224, 224, 1) !important;
+        height: 42px;
+    }
+    .properties-slider .card-title{
+        font-size: 15px !important;
+        line-height: 18px !important;
+    }
+    .properties-slider .card h5{
+        font-size: 15px;
+    }
+    .properties-slider .card h6{
+        font-size: 14px;
+    }
+    .property-brand img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:901px) and (max-width:1000px) {
+    .property-brand img{
+        width: 100%;
+    }
+    .search-form a {
+        padding: 13px 30px;
+        margin-left: 3px;
+    }
+    .search-form input {
+        width: 130px;
+        border: 0.5px solid rgba(220, 224, 224, 1) !important;
+        height: 42px;
+    }
+    .properties-links h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .properties-links a {
+            padding: 10px 10px;
+       }
+}
+@media screen and (min-width:1001px) and (max-width:1050px) {
+    .slick-prev {
+        left: -30px;
+    }
+    .slick-next {
+        right: -30px;
+    }
+    .properties-slider .card .card-title {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+@media screen and (min-width:1001px) and (max-width:1100px) {
+    .property-brand img{
+        width: 100%;
+    }
+    .properties-slider .card {
+        width: 290px !important;
+}
+}
+@media screen and (min-width:2001px) and (max-width:2700px) {
+    .property-brand img{
+        height: 70px;
+    }
+}
+@media screen and (min-width:1050px) and (max-width:1100px) {
+    .properties-slider .card .card-title{
+        font-size: 19px !important;
+        line-height: 20px !important;
+    }
+    .properties-slider .card h5{
+        font-size: 15px !important;
+    }
+}
+/* //////// finance page ////// */
+.hero-section{
+    background-image: url('/assets/images/finance/Rectangle 163.png');
+    background-size: cover;
+}
+.hero-section .wrapper{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-section .wrapper h1{
+    font-family: 'Merriweather' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 70px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 3.5rem;
+}
+.hero-section .wrapper p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.625rem;
+    line-height: 37px;
+    text-align: center;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+}
+
+.property-value{
+    background: #EFF1F5;
+    border-radius: 16px;
+}
+.property-value .title{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 25px;
+    text-align: center;
+    color: #091638;
+    padding: 1rem 0px;
+}
+.property-value .button{
+    background-color: #00B0BB;
+}
+.estimated-value{
+    border: 1.5px solid #00B0BB;
+}
+.estimated-value h6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #091638;
+}
+.down-payment h6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #091638;
+}
+.down-payment span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 0.5rem;
+}
+.down-payment input{
+    background: #E5E7EC;
+    border-radius: 16px;
+    height: 6px;
+    width: 100%;
+}
+.estimated-offers h2{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #00B0BB;
+}
+.estimated-offers .header-para{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.estimated-offers .content{
+    background: #EFF1F5;
+    margin-bottom: 1.5rem;
+}
+.estimated-offers .content h6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    text-align: center;
+    color: #091638;
+}
+.estimated-offers .content p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #091638;
+    margin: 0px 2.5rem;
+}
+
+.buying-section{
+    background-image: url('/assets/images/finance/Rectangle 162.png');
+    background-size: cover;
+    background-position: center;
+}
+.buying-section .wrapper{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0px;
+}
+.buying-section .wrapper h1{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+/*            font-size: 67px;*/
+    font-size: 3.5rem;
+    line-height: 28px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 4.5rem;
+    padding-bottom: 2rem
+}
+.buying-section .wrapper p{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 42px;
+    text-align: center;
+    padding: 0.5rem 13rem 1rem 13rem;
+}
+.buying-section .buying-btn{
+    text-align: center;
+    padding-bottom: 4.5rem;
+}
+.buying-section .buying-btn a{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    background-color: #00B0BB;
+    padding: 0.5rem 2.5rem !important;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+.buying-section .buying-btn a:hover{
+    background-color: #00b0bbde !important;
+}
+
+
+@media screen and (max-width: 769px){
+    .hero-section .wrapper h1 {
+        padding-top: 2.5rem;
+    }
+    .hero-section .wrapper p {
+        padding: 0.5rem 5rem 3rem 5rem;
+    }
+}
+@media screen and (max-width: 548px){
+    .hero-section .wrapper h1 {
+        font-size: 2rem;
+    }
+    .hero-section .wrapper p {
+        font-size: 1.325rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .hero-section .wrapper h1 {
+        font-size: 1.5rem;
+        padding: 1.5rem 0.25rem 0rem 0.25rem;
+        line-height: 25px;
+    }
+    .hero-section .wrapper p {
+        font-size: 1.025rem;
+        line-height: 19px;
+        padding: 1rem 2rem 1.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .estimated-offers .content p {
+        margin: 0px 0.5rem;
+    }
+}
+@media screen and (max-width: 769px){
+    .offers-section .wrapper {
+        padding-bottom: 0rem !important;
+    }
+    .estimated-offers {
+        padding: 0rem 1.5rem !important;
+    }
+    .estimated-offers h2 {
+        margin: 0.5rem auto;
+    }
+}
+ @media screen and (min-width: 417px) and (max-width: 600px){
+    .estimated-offers {
+        padding: 0rem 0.5rem !important;
+    }
+    .estimated-offers .content h6 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .estimated-offers .content p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
+ @media screen and (min-width: 768px) and (max-width: 999px){
+    .estimated-offers {
+        padding: 0rem 0.5rem !important;
+    }
+    .estimated-offers .content h6 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+ @media screen and (min-width: 1000px) and (max-width: 1050px){
+    .estimated-offers {
+        padding: 0rem 0.5rem !important;
+    }
+    .estimated-offers .content h6 {
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .estimated-offers .content p {
+
+       font-size: 14px;
+       line-height: 20px;
+   }
+}
+@media screen and (min-width: 1800px) and (max-width: 2000px)
+{
+    .hero-section .wrapper p {
+     font-size: 2.5rem;
+     line-height: 40px;
+   }
+   .buying-section .wrapper p{
+        font-size: 3rem;
+        line-height: 50px;
+   }
+}
+@media screen and (max-width: 416px){
+    .estimated-offers {
+        padding: 0rem 0.5rem !important;
+    }
+    .estimated-offers .content h6 {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .estimated-offers .content p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
+@media screen and (max-width: 328px){
+    .estimated-offers .wrapper {
+        padding-top: 0rem !important;
+    }
+    .estimated-offers .content {
+        display: block !important;
+    }
+    .estimated-offers .content h6 {
+        margin-bottom: 0px;
+    }
+    .estimated-offers .content p {
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .buying-section .wrapper p {
+        padding: 0.5rem 5rem 1rem 5rem;
+    }
+}
+@media screen and (max-width: 769px){
+    .buying-section .wrapper p {
+        padding: 0.5rem 2rem 1rem 2rem;
+    }
+}
+@media screen and (max-width: 625px){
+    .buying-section .wrapper h1 {
+        font-size: 3rem;
+    }
+    .buying-section .wrapper p {
+        font-size: 1.475rem;
+        line-height: 38px;
+    }
+}
+@media screen and (max-width: 435px){
+    .buying-section .wrapper h1 {
+        font-size: 2.15rem;
+        line-height: 20px;
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    .buying-section .wrapper p {
+        font-size: 1.2rem;
+        line-height: 25px;
+        padding: 0.5rem 1rem 1rem 1rem;
+    }
+    .buying-section .buying-btn a {
+        font-size: 20px;
+        line-height: 35px;
+        padding: 0.5rem 2rem !important;
+    }
+    .buying-section .buying-btn {
+        padding-bottom: 2.5rem;
+    }
+}
+@media screen and (max-width: 310px){
+    .buying-section .wrapper h1 {
+        font-size: 1.8rem;
+        line-height: 30px;
+        padding-top: 2rem;
+        padding-bottom: 0.85rem;
+    }
+    .buying-section .wrapper p {
+        font-size: 1.12rem;
+        line-height: 22px;
+    }
+}
+
+
+
+
+
+
+

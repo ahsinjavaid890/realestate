@@ -51,7 +51,7 @@
                 <div class="collapse navbar-collapse pt-2" id="main-navbar">
                     <ul class="navbar-nav mr-auto w-100 justify-content-center">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link " href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                Properties
                             </a>
                         </li>
@@ -287,9 +287,79 @@
                         <img src="/assets/images/index-images/arrow-1.png">
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-4 pb-4 mix business blog">
-                    <!-- /////////working panding////// -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mt-3 p-3 rounded loan-calculator">
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><img src="/assets/images/index-images/fi_chevron-left.png"></a>
+                        <span class="font-weight-bold loan-heading">Loan Calculator</span>
+                        <a href="#"><img src="/assets/images/index-images/fi_more-vertical.png"></a>
+                    </div>
+                    <div class="resident bg-white p-3 mx-2 mt-5 rounded">
+                     <h6 class="font-weight-bold">Residency Status</h6>
+                     <select class="form-control border p-2" id="" name="">
+                        <option class="font-weight-bold ">UAE Resident</option>
+                        <option class="font-weight-bold">PAK Resident</option>
+                        <option class="font-weight-bold">IND Resident</option>
+                        <option class="font-weight-bold">BAN Resident</option>
+                      </select>
+                    </div>
+                    <div class=" loan-bar bg-white p-3 mx-2 mt-4 rounded">
+                        <h6 class="font-weight-bold">Your Age</h6>
+                        <input id="" class="form-control" type="range" value="0" min="0" max="100">
+                        <div class=" ages d-flex justify-content-between">
+                        <span >18 years</span>
+                        <span >60 years</span>
+                        </div>
+                       </div>
+                       <div class="resident bg-white p-3 mx-2 mt-4 rounded">
+                        <h6 class="font-weight-bold">Monthly Income</h6>
+                        <input class="  rounded form-control border p-2 " id="" type="" name="" required="" placeholder="40000" data-error="">
+                       </div>
+                       <div class="loan-bar bg-white p-3 mx-2 mt-4 mb-4 rounded">
+                        <h6 class="font-weight-bold">Loan Length</h6>
+                        <input id="" class="form-control" type="range" value="0" min="0" max="100">
+                        <div class=" ages d-flex justify-content-between">
+                        <span >2 years</span>
+                        <span >10 years</span>
+                        </div>
+                       </div>
+                       <div class=" bg-white p-4  mt-5 mb-3 rounded">
+                        <a class="btn-block text-center py-2 rounded apply-loan text-white text-uppercase font-weight-bold" href="#">Apply Loan</a>
+                       </div>   
                 </div>
+                <div class="col-md-8 col-lg-8 col-xl-8 mt-3">
+                    <div class=" d-flex loan-calculator-side rounded">
+                        <div class="col-md-7 col-lg-7 col-xl-7 py-5 pl-4">
+                          <div>
+                            <span class="font-weight-bold">
+                                You could borrow around <strong class="d-block font-weight-bold">AED</strong>
+                                <strong class="d-block font-weight-bold">1,034,760</strong>
+                                from the bank.
+                            </span>
+                            <div class="py-5">
+                                <span class="font-weight-bold ">
+                                    with a monthly payment of <strong class="d-block font-weight-bold">AED</strong>
+                                    <strong class="d-block font-weight-bold">17, 240</strong>
+                                    in 5 years.
+                                </span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-5 col-xl-5 px-4 py-5" style="background: rgba(250, 250, 250, 1);
+                    ">
+                        <img src="assets/images/index-images/ghar 1.png" class="w-100">
+                        <div class="text-center px-3 pt-2"> 
+                            <p class="text-center">This value could get you a 1 to  2 bedroom(s) apartment in  the UAE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="  text-white mt-4 text-center px-5 mortgage-process  py-5" style="background-color:#00b0bb;">
+                    <h5 class="">Start your hassle-free mortgage process now</h5>
+                    <p class="text-white text-center mt-4">With a few details, you can get a quick preview of the loan amount you can get from our bank partners
+                    </p>
+                    <div class="text-center mt-5">
+                        <a href="#" class="  text-white  px-4 font-weight-bold py-2  ">Let's Get Started<div class="ripple-container"></div></a>
+                       </div>
+                   </div>
             </div>
             
         </div>
@@ -420,15 +490,15 @@
         <div class="container pt-5 mb-5">
             <div class="row pl-5 py-3">
 
-                <div class="col-md-3  footer-contact-widget">
-                  <img src="assets/images/index-images/paper-plane 1.png" class="w-75">
+                <div class="col-md-3  footer-contact-widget ">
+                  <img src="assets/images/index-images/paper-plane 1.png" class="w-60">
                 </div>
-                <div class="col-md-9 recent-widget  pt-4">
+                <div class="col-md-9 recent-widget  pt-4 pl-5">
                     <h3 class="footer-title">Subscribe to newsletter </h3>
                     <p>Get the latest news and interesting offers and real estate</p>
                     <div class="pt-2">
                         <input class="foot-email  rounded border-0 " id="email" type="email" name="email" required="" placeholder="Your e-mail address" data-error="Please enter your Email">
-                        <a class="btn foot-btn ml-2 " href="#">Subscribe</a>
+                        <a class="btn foot-btn ml-2 font-weight-bold" href="#">Subscribe</a>
                     </div>
                 </div>
             </div>
